@@ -4,7 +4,7 @@ import com.example.perceandroid.R;
 
 public final class SviPodaci {
     public static Korisnik[] sviKorisnici = {
-            new Korisnik(1, "Tamara", "Stevanovic", "+81644233932", "Borska 36", "stevanovic.tamara12@gmail.com", "1", "taki"),
+            new Korisnik(1, "Tamara", "Stevanovic", "+381644233932", "Borska 36", "stevanovic.tamara12@gmail.com", "1", "taki"),
             new Korisnik(2, "Filip", "Apostolakopoulos", "+381638300930", "Vojvode Stepe 39", "stevanovic.tamara12@gmail.com", "1", "filip"),
             new Korisnik(3, "Daria", "Stevanovic", "381644233932", "Borska 36", "stevanovic.tamara12@gmail.com", "1", "daki"),
             new Korisnik(4, "Darko", "Stevanovic", "381644233932", "Borska 36", "stevanovic.tamara12@gmail.com", "1", "dare"),

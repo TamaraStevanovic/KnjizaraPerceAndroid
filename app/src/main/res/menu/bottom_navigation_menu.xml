@@ -12,10 +12,15 @@
         android:icon="@drawable/allbooks"
         android:title="@string/text_label_2"/>
     <item
+        android:id="@+id/preporuceno_page"
+        android:enabled="true"
+        android:visible="true"
+        android:icon="@drawable/allbooks"
+        android:title="Preporuceno"/>
+    <item
         android:id="@+id/myaccount_page"
         android:enabled="true"
         android:visible="true"
-
         android:icon="@drawable/myaccount"
         android:title="@string/text_label_4"/>
 </menu>

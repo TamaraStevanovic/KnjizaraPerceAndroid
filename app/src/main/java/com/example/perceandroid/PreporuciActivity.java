@@ -5,7 +5,10 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -38,8 +41,8 @@ public class PreporuciActivity extends AppCompatActivity implements CompoundButt
 
         for (int i = 0; i < SviPodaci.sviKorisnici.length; i++) {
             if (SviPodaci.sviKorisnici[i].getKorisnikId() != korisnikId)
-                if(!SviPodaci.sviKorisnici[i].getKorime().equals("admin"))
-                korisniciSistema.add(new Preporuka(SviPodaci.sviKorisnici[i].getKorime()));
+                if (!SviPodaci.sviKorisnici[i].getKorime().equals("admin"))
+                    korisniciSistema.add(new Preporuka(SviPodaci.sviKorisnici[i].getKorime()));
         }
         preporukaAdapter = new PreporukaAdapter(this, (ArrayList<Preporuka>) korisniciSistema);
         listView = (ListView) findViewById(R.id.preporuciPrijateljima);
@@ -62,7 +65,21 @@ public class PreporuciActivity extends AppCompatActivity implements CompoundButt
 
 
     public void posaljiPreporuke(View view) {
+        Button btn = findViewById(R.id.btn);
+        btn.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View arg0) {
+                for (int i = 0; i < korisniciSistema.toArray().length; i++) {
+                    if (korisniciSistema.get(i).isSelected()) {
+                        korisniciSistema.remove(i);
+                        preporukaAdapter.notifyDataSetChanged();
+                    }
+
+                }
+            }
+
+
+        });
     }
-
 }

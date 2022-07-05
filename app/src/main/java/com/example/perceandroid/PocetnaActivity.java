@@ -89,6 +89,9 @@ public class PocetnaActivity extends AppCompatActivity implements SearchView.OnQ
                         return true;
 
                     case R.id.myaccount_page:
+                        Intent newActivityProfile = new Intent(getApplicationContext(), MojNalogActivity.class);
+                        newActivityProfile.putExtra("korisnikId", korisnikId);
+                        startActivity(newActivityProfile);
                         return true;
                 }
                 return false;

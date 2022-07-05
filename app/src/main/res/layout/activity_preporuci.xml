@@ -29,7 +29,7 @@
                     android:id="@+id/preporuciPrijateljima"
                     android:layout_width="match_parent"
                     android:layout_height="500dp">
-
+                </ListView>
                     <Button
                         android:id="@+id/btn"
                         android:layout_width="wrap_content"
@@ -37,9 +37,8 @@
                         android:layout_gravity="center"
                         android:text="Posalji preporuke"
                         android:onClick="posaljiPreporuke"
-
                         />
-                </ListView>
+
 
             </LinearLayout>
 
