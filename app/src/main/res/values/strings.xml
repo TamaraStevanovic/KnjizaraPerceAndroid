@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Knjizara "Perce"</string>
+    <string name="hint_search">Unesite knjigu</string>
+
+    <string name="text_label_1"> Pocetna </string>
+    <string name="text_label_2"> Knjige </string>
+    <string name="text_label_3"> Preporuceno </string>
+    <string name="text_label_4"> Moj nalog </string>
+</resources>
