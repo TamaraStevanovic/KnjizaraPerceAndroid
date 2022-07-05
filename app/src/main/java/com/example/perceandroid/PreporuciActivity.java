@@ -65,6 +65,7 @@ public class PreporuciActivity extends AppCompatActivity implements CompoundButt
 
 
     public void posaljiPreporuke(View view) {
+        Toast.makeText(this, "Preporuke su poslate", Toast.LENGTH_SHORT).show();
         Button btn = findViewById(R.id.btn);
         btn.setOnClickListener(new View.OnClickListener() {
 

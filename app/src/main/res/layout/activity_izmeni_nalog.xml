@@ -49,13 +49,13 @@
                         android:gravity="left"
                         android:text="Korisnicko ime: "></TextView>
 
-                    <TextView
+                    <EditText
                         android:id="@+id/username"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="left"
-                        android:text="Username: "></TextView>
+                        android:text="Username: "></EditText>
                 </TableRow>
 
                 <TableRow android:layout_marginBottom="15dp">
@@ -67,13 +67,13 @@
                         android:gravity="left"
                         android:text="Ime: "></TextView>
 
-                    <TextView
+                    <EditText
                         android:id="@+id/firstName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="left"
-                        android:text="Username: "></TextView>
+                        android:text="Username: "></EditText>
                 </TableRow>
 
                 <TableRow android:layout_marginBottom="15dp">
@@ -85,13 +85,13 @@
                         android:gravity="left"
                         android:text="Prezime: "></TextView>
 
-                    <TextView
+                    <EditText
                         android:id="@+id/lastName"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="left"
-                        android:text="Username: "></TextView>
+                        android:text="Username: "></EditText>
                 </TableRow>
 
                 <TableRow android:layout_marginBottom="15dp">
@@ -103,13 +103,13 @@
                         android:gravity="left"
                         android:text="Adresa: "></TextView>
 
-                    <TextView
+                    <EditText
                         android:id="@+id/address"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="left"
-                        android:text="Username: "></TextView>
+                        android:text="Username: "></EditText>
                 </TableRow>
 
                 <TableRow android:layout_marginBottom="15dp">
@@ -121,13 +121,13 @@
                         android:gravity="left"
                         android:text="Telefon: "></TextView>
 
-                    <TextView
+                    <EditText
                         android:id="@+id/phone"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="3"
                         android:gravity="left"
-                        android:text="Username: "></TextView>
+                        android:text="Username: "></EditText>
                 </TableRow>
             </TableLayout>
 
@@ -136,16 +136,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:onClick="izmeniInformacije"
-                android:text="Izmeni informacije"></Button>
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:onClick="promeniSifru"
-                android:text="Promeni sifru"></Button>
+                android:onClick="sacuvaj"
+                android:text="Sacuvaj"></Button>
 
         </LinearLayout>
     </RelativeLayout>

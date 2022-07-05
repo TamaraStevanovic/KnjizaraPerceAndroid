@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import com.example.perceandroid.entities.Korisnik;
@@ -38,5 +39,12 @@ public class MojNalogActivity extends AppCompatActivity {
 
         TextView phone = findViewById(R.id.phone);
         phone.setText(k.getTelefon());
+    }
+
+    public void izmeniInformacije(View view){
+        Intent intent = new Intent(this, IzmeniNalogActivity.class);
+        intent.putExtra("korisnikid", korisnikId);
+        startActivity(intent);
+
     }
 }
